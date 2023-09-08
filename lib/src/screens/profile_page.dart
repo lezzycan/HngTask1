@@ -24,23 +24,7 @@ class MyProfileDetails extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.colorWhite,
 
-      // appBar: AppBar(
-      //   title:  Text('My Profile',
-      //   style: GoogleFonts.lato(
-      //     fontSize: 14.sp,
-      //     color: AppColors.colorWhite
-      //   ),
-      //   ),
-      //   flexibleSpace: Center(
-      //     child: CircleAvatar(
-      //       radius: 50.r,
-      //       backgroundColor: Colors.red,
-      //     ),
-      //   ),
-      //   backgroundColor: Colors.blue,
-      //  shape: RoundedRectangleBorder(borderRadius: BorderRadius.vertical(bottom: Radius.circular(16.r))),
-
-      // ),
+      
       body: CustomScrollView(
         primary: true,
         shrinkWrap: true,
@@ -51,7 +35,7 @@ class MyProfileDetails extends StatelessWidget {
               shape: BeveledRectangleBorder(
                   borderRadius:
                       BorderRadius.vertical(bottom: Radius.circular(16.r))),
-              expandedHeight: 200.h,
+              expandedHeight: 250.h,
               //  collapsedHeight: 100.h,
               pinned: true,
               floating: false,

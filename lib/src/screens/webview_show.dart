@@ -19,8 +19,7 @@ class GithubWebLoader extends StatefulWidget {
 }
 
 class _WebLoaderActivity extends State<GithubWebLoader> {
-  // final login = Get.put(LoginController());
-  // HomepathwayController homepage = Get.put(HomepathwayController());
+  
 
   @override
   void initState() {
@@ -51,13 +50,14 @@ class _WebLoaderActivity extends State<GithubWebLoader> {
             color: AppColors.colorPrimary,
           ),
         ),
+        centerTitle: true,
         iconTheme: const IconThemeData(color: AppColors.colorPrimary),
         title: Text(widget.title, style: styleAppbar),
         elevation: 0.0,
       ),
       body: WebView(
         debuggingEnabled: true,
-        // initialUrl: url,
+        
         javascriptMode: JavascriptMode.unrestricted,
         onWebViewCreated: (WebViewController tmp) async {
           await tmp.loadUrl(widget.url);
